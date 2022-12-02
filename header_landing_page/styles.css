@@ -1,0 +1,274 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body
+{
+    font-family: 'Inconsolata', monospace;
+
+}
+
+nav
+{
+     position: fixed;
+     top: 20px;
+     left: 20px;
+     display: flex;
+    justify-content: flex-start;
+
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+header
+{
+    background: #CC95C0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+
+.container
+{
+   width: 95%;
+   display: flex;
+   max-width: 1200px;
+   align-items: center;
+   margin: auto;
+   
+}
+
+img
+{
+
+    display: block;
+    height: 450px;
+    object-fit: cover; /* para que no pierda la proporción*/
+    width: 100%;
+    animation: mover_arriba 1s ease-in;
+}
+
+.textos
+{
+    width: 50%;
+    color: white;
+
+}
+
+.textos h1
+{
+    font-size: 80px;
+    animation: mover_der 1s ease-in;
+}
+
+.textos h2
+{
+    font-size: 30px;
+    animation: mover_izq 1s ease-in;
+}
+
+.textos a
+{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 2px solid white;
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: mover_abajo 1s ease-in;
+}
+
+.wave
+{
+    height: 100px;
+    width: 100%;
+    background: #CC95C0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.enlaces
+{
+    position: fixed;  
+    display: flex;  
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background: #5f5fce70;
+    transition: all 2s ease;
+}
+
+.iconos
+{
+    animation: mover_izq 1s ease-in;
+    display: block;
+    z-index: 10;
+}
+
+.dos
+{
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 50% 50%);
+}
+.uno
+{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0% 0%);
+}
+
+@keyframes mover_izq
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    100%
+    {
+        opacity:1;
+        transform: translate(0)
+    }
+}
+
+@keyframes mover_arriba
+{
+    0%
+    {
+        opacity:0;
+        transform: translateY(-100px);
+
+    }
+    100%
+    {
+        opacity:1;
+        transform:translate(0);
+    }
+}
+@keyframes mover_abajo
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(100px)
+
+    }
+    100%
+    {
+        opacity:1;
+        transform: translateY(0)
+    }
+}
+@keyframes mover_der
+{
+    0%
+    {
+        opacity:0;
+        transform: translateX(100px);
+
+    }
+    100%
+    {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width:1100px)
+{
+    .container, .wave
+    {
+        width: 100%;
+    }
+    img {
+        height: 250px;
+    };
+
+}
+@media screen and (max-width:800px)
+{
+    .container, .wave
+    {
+        width: 100%;
+    }
+    img {
+        height: 200px;
+ 
+    }
+    .textos h1{
+        font-size: 40px;
+
+    }
+    .textos h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:600px)
+
+{
+    .container, .wave
+    {
+        width: 100%;
+    }
+    img {
+        height: 120px;
+
+    }
+    .textos h1{
+        font-size: 30px;
+
+    }
+    .textos h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px)
+{
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img 
+    {
+        margin: 10px;
+    }
+
+    .textos
+    {
+       width: 100%; 
+       text-align: center;
+
+    }
+    .textos h1 {
+        font-size: 30px;
+    }
+    
+}

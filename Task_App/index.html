@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ Task App</title>
+    <link rel="stylesheet" href="CSS/journal.min.css"
+  </head>
+  <body>
+    <!-- NAVIGATION-->
+    <nav class="navbar navbar-light bg-light">
+      <div>
+        <a href="#" class="navbar-brand"> Task App</a>
+      </div>
+    </nav>
+
+    <!--MAIN CONTENT-->
+    <div class="container">
+      <div class="row pt-4">
+        <!--Bootstrap divide la pantalla completa en 12 columnas, este div lo vamos a dividir en 4 a la izquierda y 8 a la derecha-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <form id="formTask">
+                <div class="row g-2">
+                    <input type="text" id="title" placeholder="Add a ToDo" class="form-control">
+                    <textarea id="description"  rows="8" cols="80" class="form-control" placeholder="Add a Description"></textarea>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Guardar
+                    </button>
+                </div>  
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 p-2">
+          <div id="task">
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <script src="app.js"> </script>
+
+  </body>
+</html>

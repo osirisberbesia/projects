@@ -1,0 +1,9 @@
+@media screen, print 
+{
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../Fonts/Ubuntu-Medium.ttf");
+       
+    }
+}

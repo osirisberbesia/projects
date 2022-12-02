@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ Aplicación de Productos</title>
+    <!--Tema de bootstrap Minty -->
+    <link rel="stylesheet" href="CSS/minty.min.css"
+</head>
+
+<body>
+
+<!-- Navegacion-->
+<nav class="navbar navbar-light bg-light">
+<a href="/" class="navbar-brand">
+Aplicación de Productos
+</a>
+</nav>
+
+<div class="container">
+
+<!--Aplicacion-->
+
+<div id="App" class="row pt-5">
+<!--Aqui se pone el formulario-->
+<div class="col-md-4">
+    <div class="Card">
+        <div class="card-header">
+            <h4>Agrega un producto</h4>
+
+        </div>
+        
+        <form id="product-form" class="card-body">
+            <div class="form-group">
+            <input type="text" id="name" placeholder="Nombre del Producto" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" step="0.01" id="price" placeholder="Precio" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" id="year" min"1900" value="2021" placeholder="Año producción" class="form-control">            
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+
+         </form>
+
+    </div>
+</div>
+<!--Aqui se muestran los productos-->
+<div class="col-md-8">
+        <div id="product-list" class="col-md-8">
+
+        </div>
+    
+</div>
+
+</div>
+
+</div>
+
+<script src="App.js"></script>
+
+</body>
+</html>

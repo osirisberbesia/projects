@@ -1,0 +1,22 @@
+@media screen, print 
+{
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../Fonts/Ubuntu-Medium.ttf");
+       
+    }
+
+    @font-face {
+        font-family: 'Clicker';
+        src: url("../Fonts/ClickerScript-Regular.ttf");
+ 
+    }
+
+    @font-face {
+        font-family: 'Cherry';
+        src: url("../Fonts/Cherry-Monospace-Light.ttf");
+
+    }
+
+}

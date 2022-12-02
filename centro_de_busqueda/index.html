@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Busquedas</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- La idea es con lo aprendido en CSS y en HTML. Crear cajas de busqueda de:
+    - youtube
+    - google
+    - pinterest
+    - wikipedia
+    - reddit
+    bueno, no soy experta, y no se muy bien como lo haré, pero VAMOS! -->
+    <main class="main">
+        <section class="container cont-google">
+            <form action="https://www.google.com/search">
+            <label for="google">Qué deseas googlear?</label>
+               <br>
+            <input type="text" id="google" name="q">
+                <br>
+            <div class="btn-google"><button class="btn-google">¡Googlear!</button></div>
+            </form>
+        </section>
+        <section class="container cont-pin">
+            <form action="https://www.pinterest.com/search/pins/">
+            <label for="pinterest">Busca un Pin!</label>
+            <br>
+            <input type="text" id="pinterest" name="q">
+            <br>
+            <div class="btn-pin"><button class="btn-pin">¡Buscar Pin!</button> </div>
+            
+            </form>
+
+        </section>
+        <section class="container cont-yt">
+            <form action="https://www.youtube.com/results">
+            <label for="youtube">Buscar en YouTube</label>
+            <br>
+            <input type="text" name="search_query" id="youtube"> 
+            <br>
+            <div class="btn-yt">
+                <button class="btn-yt">
+                    ¡A YouTube!
+                </button>
+            </div>
+            </form>
+        </section>
+        <section class="container cont-wk">
+            <form action="https://es.wikipedia.org/w/index.php">
+            <label for="wikipedia">Qué deseas saber?</label>
+            <br>
+            <input type="text" id="wikipedia" name="search">
+            <br>
+            <div class="btn-wk"><button class="btn-wk">Investiga!</button></div>
+            </form>
+
+        </section>
+        <section class="container cont-rdd">
+            <form action="https://www.reddit.com/search/">
+                <label for="reddit">Reddit! </label>
+                <br>
+                <input type="text" id="reddit" name="q">
+                <br>
+                <div class="btn-rdd"><button class="btn-rdd">REDDIT!</button></div>
+            </form>    
+        </section>
+
+
+    </main>
+
+
+
+</body>
+</html>
