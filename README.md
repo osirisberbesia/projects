@@ -1,1 +1,2 @@
 # Osiris Berbesia
+## Illustrator & Developer
